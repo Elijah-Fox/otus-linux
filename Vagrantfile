@@ -67,7 +67,7 @@ Vagrant.configure("2") do |config|
                      end
                   end
           end
- 	  box.vm.provision "shell", inline: raid5.sh
+ 	  box.vm.provision "shell", path: "raid5.sh"
         end
   end
 end
